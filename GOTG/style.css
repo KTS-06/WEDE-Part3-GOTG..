@@ -1,0 +1,52 @@
+/* ==========================================================================
+Gift of the Givers Foundation — Master Stylesheet (style.css)
+========================================================================== */
+
+/* Root Design Tokens */
+:root {
+--primary-red: #dc2626;
+--primary-red-hover: #b91c1c;
+--secondary-emerald: #059669;
+--accent-amber: #f59e0b;
+--dark-slate: #0f172a;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+}
+::-webkit-scrollbar-track {
+background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+background: #cbd5e1;
+border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #94a3b8;
+}
+
+/* Smooth Accordion Transitions */
+.accordion-content {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s ease-in-out;
+}
+
+/* Map Leaflet Pin Styles */
+.leaflet-popup-content-wrapper {
+border-radius: 12px !important;
+font-family: inherit !important;
+padding: 4px !important;
+}
+
+/* Custom Modal Animation */
+@keyframes fadeIn {
+from { opacity: 0; transform: scale(0.96); }
+to { opacity: 1; transform: scale(1); }
+}
+
+.modal-anim {
+animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
